@@ -1,0 +1,20 @@
+<h2>One-way Data Binding Examples:</h2>
+
+<h3>1. Interpolation (component to view)</h3>
+<p>{{demoInterpolation}}</p>
+
+<h3>2. Property Binding (component to view)</h3>
+
+<p [innerHTML]="demoProperty"></p>
+<p>This is image binding exampample: <img [src]="demoSrc"/></p>
+<p [style.color]="demoColor">This is style binding example</p>
+<p [ngStyle]="demoStyle">This is ngStyle example</p>
+
+<h3>3. Event Binding (view to component)</h3>
+<p><button (click)="demoAlert()">Show Alert</button></p>
+
+<h2>Tow-way Data Binding Example:</h2>
+<p>
+  <input [(ngModel)]="demoInputText" placeholder="Enter input text here"/>
+  <span>  demoInputText = {{demoInputText}}</span>
+</p>
